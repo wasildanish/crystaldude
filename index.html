@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crystal Shop — Home</title>
+  <link rel="stylesheet" href="styles.css">
+     <link rel="icon" type="image/png" sizes="32x32" href="img/tittl.webp">
+  <!-- Bootstrap (only used on the home page for the button) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  </head>
+    <style>
+        .footer {
+  background:#b3edfc ;
+  color: black;
+  padding: 50px 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer h2, .footer h3 {
+  color: #c084fc;
+}
+
+.footer-about, .footer-links, .footer-contact {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color:black;
+}
+
+.socials a {
+  display: inline-block;
+  color: black;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: black;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: black;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-about, .footer-links, .footer-contact {
+    margin: 15px 0;
+  }
+
+  .socials a {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 10px;
+  }
+
+  .footer h2 {
+    font-size: 22px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+    </style>
+
+  <body>
+    <div id="preloader"><div class="loader"></div></div>
+    <header>
+      <div class="wasil">
+ <div class="container topbar">
+        <div class="logo">
+          <span class="logo-anim">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="64" height="64" rx="12" fill="#6b46c1" />
+              <path d="M18 40 L30 24 L46 44" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="sparkle sparkle1"></span>
+            <span class="sparkle sparkle2"></span>
+            <span class="sparkle sparkle3"></span>
+          </span>
+          <div>
+            <div class="site-title">Crystal Shop</div>
+            <div class="muted">Gems & healing crystals</div>
+          </div>
+        </div>
+
+      
+
+          <!-- mobile menu toggle -->
+          <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#2b0b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+            <nav aria-label="Mobile navigation">
+              <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="special-offers.html">Special Offers</a>
+                <a href="new-arrival.html">New Arrival</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="floating-crystals">
+          <span class="crystal crystal1"></span>
+          <span class="crystal crystal2"></span>
+          <span class="crystal crystal3"></span>
+        </div>
+        <div class="container hero-grid">
+          <div>
+            <h1>Beautiful crystals for every intention</h1>
+            <p class="muted">Crystals for healing, decor, and jewellery — explore by type or view our latest arrivals.</p>
+            
+      <button class="ws" style="border-radius: 15%; border: 0cap;"> <a href="products.html" style="font-size: large; font-weight: 700; ">our product</a></button>  
+             
+          </div>
+      
+          <div>
+            <img src="img/crystal colllect.jpg" alt="Crystal collection" style="width:100%;border-radius:8px;" />
+          </div>
+        </div>
+      </section>
+
+      <section class="products container">
+        <div class="section-title">
+          <h2>Featured categories</h2>
+          <div class="muted">Click a category to view</div>
+        </div>
+        <div class="grid">
+          <article class="card"><img src="img/diamond.jpg" alt="Diamond" /><div class="meta"><strong>Diamond</strong><div class="muted">Clarity and brilliance</div></div></article>
+          <article class="card"><img src="img/amber.jpg" alt="Amber" /><div class="meta"><strong>Amber</strong><div class="muted">Warmth & protection</div></div></article>
+          <article class="card"><img src="img/amethyst.jpg" alt="Amethyst" /><div class="meta"><strong>Amethyst</strong><div class="muted">Calm & intuition</div></div></article>
+          <article class="card"><img src="img/quartz.jpg" alt="Quartz" /><div class="meta"><strong>Quartz</strong><div class="muted">Amplification</div></div></article>
+        </div>
+      </section>
+
+      <section class="products container">
+        <div class="section-title"><h2>Why crystals?</h2><div class="muted">Benefits & uses</div></div>
+        <p class="muted">Holding crystals or placing them on your body is thought to promote physical, emotional and spiritual healing. Crystals are used to enhance the body's healing abilities, reduce stress and improve quality of life. This site provides product listings, downloadable feature documents, and tools to compare items.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer simple">
+ <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2>crystal website</h2>
+      <p>✨ “Every crystal holds a hidden sparkle — bring light and positivity into your life with our handcrafted crystals.”</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>
+        📧 Email: 
+        <a href="mailto:info@mywebsite.com">info@mywebsite.com</a>
+      </p>
+      <p>
+        📞 Phone: 
+        <a href="tel:+919876543210">+91 98765 43210</a>
+      </p>
+
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 MyWebsite | All Rights Reserved.</p>
+  </div>
+</footer>
+
+    </footer>
+
+    <script src="main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>

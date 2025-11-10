@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compare Products — Crystal Shop</title>
+    <link rel="stylesheet" href="styles.css">
+       <link rel="icon" type="image/png" sizes="32x32" href="img/tittl.webp">
+  </head>
+    <style>
+        .footer {
+  background:#b3edfc ;
+  color: black;
+  padding: 50px 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer h2, .footer h3 {
+  color: #c084fc;
+}
+
+.footer-about, .footer-links, .footer-contact {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color:black;
+}
+
+.socials a {
+  display: inline-block;
+  color: black;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: black;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: black;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-about, .footer-links, .footer-contact {
+    margin: 15px 0;
+  }
+
+  .socials a {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 10px;
+  }
+
+  .footer h2 {
+    font-size: 22px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+    </style>
+
+  <body>
+    <header>
+        <div class="wasil">
+      <div class="container topbar">
+        <div class="logo">
+          <span class="logo-anim">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="64" height="64" rx="12" fill="#6b46c1" />
+              <path d="M18 40 L30 24 L46 44" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="sparkle sparkle1"></span>
+            <span class="sparkle sparkle2"></span>
+            <span class="sparkle sparkle3"></span>
+          </span>
+          <div>
+            <div class="site-title">Crystal Shop</div>
+          </div>
+        </div>
+
+      
+
+          <!-- mobile menu toggle -->
+          <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#2b0b4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+            <nav aria-label="Mobile navigation">
+              <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="compare.html">Compare</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    </div>
+
+    <main class="container" style="position:relative;">
+      <div class="floating-crystals">
+        <span class="crystal crystal1"></span>
+        <span class="crystal crystal2"></span>
+        <span class="crystal crystal3"></span>
+      </div>
+      <section class="products">
+        <div class="section-title"><h2>Compare Products</h2><div class="muted">Selected items</div></div>
+        <div id="compareArea" class="grid"></div>
+        <div style="margin-top:12px"><a href="products.html">Back to products</a></div>
+      </section>
+    </main>
+ <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2>crystal website</h2>
+      <p>✨ “Every crystal holds a hidden sparkle — bring light and positivity into your life with our handcrafted crystals.”</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>
+        📧 Email: 
+        <a href="mailto:info@mywebsite.com">info@mywebsite.com</a>
+      </p>
+      <p>
+        📞 Phone: 
+        <a href="tel:+919876543210">+91 98765 43210</a>
+      </p>
+
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 MyWebsite | All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+    <script>
+      function renderCompare(){
+        var list = JSON.parse(localStorage.getItem('compareList')||'[]');
+        var area = document.getElementById('compareArea');
+        area.innerHTML = '';
+        if(list.length === 0){ area.innerHTML = '<p class="muted">No items selected. Go to Products and add up to 3 items to compare.</p>'; return; }
+        list.forEach(function(item){
+          // try to find product card in products page by id
+          var card = document.querySelector('[data-id="'+item.id+'"]');
+          var el = document.createElement('article'); el.className = 'card';
+          var title = document.createElement('div'); title.className='meta';
+          title.innerHTML = '<strong>'+item.name+'</strong><div class="muted">Detailed comparison will show basic attributes here.</div>';
+          el.appendChild(title);
+          area.appendChild(el);
+        });
+      }
+      document.addEventListener('DOMContentLoaded', function(){ renderCompare(); });
+    </script>
+    <script src="main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
